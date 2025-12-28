@@ -1,7 +1,5 @@
 {
   "files": [],
-  "include": ["src/**/*"],
-  "exclude": ["dist"],
   "references": [
     { "path": "./tsconfig.app.json" },
     { "path": "./tsconfig.node.json" }
