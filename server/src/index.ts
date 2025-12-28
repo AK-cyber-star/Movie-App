@@ -14,6 +14,7 @@ import morgan from "morgan";
 import rateLimit from "express-rate-limit";
 import compression from "compression";
 import { AuthRequest } from "./middleware/auth";
+import { createDiffieHellman } from "node:crypto";
 
 
  const app: Application = express();
@@ -29,7 +30,12 @@ import { AuthRequest } from "./middleware/auth";
 
 // Middleware
 app.use(helmet());
-app.use(cors());
+app.use(cors({
+    origin: env.NODE_ENV !== "developement" ? env.FRONTEND_URL : "http://localhost:5173",
+    credentials: true,
+    optionsSuccessStatus: 200
+}));
+
 app.use(morgan("combined"));
 app.use(compression());
 app.use(rateLimit({
