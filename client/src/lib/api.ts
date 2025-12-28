@@ -3,7 +3,7 @@ import { logout } from "../store/slices/authSlice";
 import type { TMovie } from "../types/api.types";
 import { useAppDispatch } from "../hooks/useAppDispatch";
 
-const API_BASE_URL = `${import.meta.env.VITE_API_URL/api}` || "http://localhost:8080/api";
+const API_BASE_URL = `${import.meta.env.VITE_API_URL}/api` || "http://localhost:8080/api";
 
 const api = axios.create({
     baseURL: API_BASE_URL,
