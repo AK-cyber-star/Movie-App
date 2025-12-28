@@ -8,14 +8,14 @@ A **production-ready MERN stack movie application** with **JWT authentication**,
 
 | Component | URL |
 |-----------|-----|
-| **Frontend** | [https://movie-app-frontend.vercel.app](https://movie-app-frontend.vercel.app) |
-| **Backend API** | [https://movie-app-backend-railway.up.railway.app/api/health](https://movie-app-backend-railway.up.railway.app/api/health) |
+| **Frontend** | [https://movie-app-neon-pi.vercel.app](https://movie-app-neon-pi.vercel.app) |
+| **Backend API** | [https://movie-app-z6h2.onrender.com/health](https://movie-app-z6h2.onrender.com/health) |
 | **Database** | MongoDB Atlas Cluster |
 
 ## Features
 
 ### ✅ **User Features**
-- 🎥 **Home Page**: Browse 65+ IMDb Top movies with pagination (12/page)
+- 🎥 **Home Page**: Browse 60+ IMDb Top movies with pagination
 - 🔍 **Search**: Real-time search by title/description
 - 📱 **Responsive**: Mobile-first design with Material-UI
 - 🔐 **JWT Authentication**: Secure login with token persistence (Redux Persist)
@@ -32,7 +32,7 @@ A **production-ready MERN stack movie application** with **JWT authentication**,
 - **Performance**: Optimized queries, pagination, text indexes
 - **State**: Redux persist (auth survives refresh)
 - **Forms**: Formik + Yup validation
-- **Deployment**: Vercel (FE) + Railway (BE) + MongoDB Atlas
+- **Deployment**: Vercel (FE) + Render
 
 ## **Setup**
 - **IMPORTANT** Setup up you .env file according to .env.example
